@@ -3,9 +3,15 @@
 # Color files
 PFILE="$HOME/.config/leftwm/themes/current/polybar/colors.ini"
 RFILE="$HOME/.config/leftwm/themes/current/polybar/scripts/rofi/colors.rasi"
+LFILE="$HOME/.config/leftwm/themes/current/theme.toml"
 
 # Change colors
 change_color() {
+	# leftwm
+	sed -i -e 's/focused_border_color = "#.*/focused_border_color = "'$SH5'"/g' $LFILE
+	sed -i -e 's/floating_border_color = "#.*/floating_border_color = "'$SH1'"/g' $LFILE
+	sed -i -e 's/default_border_color = "#.*/default_border_color = "'$SH1'"/g' $LFILE
+
 	# polybar
 	sed -i -e 's/background = #.*/background = #1F1F1F/g' $PFILE
 	sed -i -e 's/foreground = #.*/foreground = #FFFFFF/g' $PFILE
