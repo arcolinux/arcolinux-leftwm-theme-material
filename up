@@ -31,6 +31,7 @@ volumeicon &
 #discord &
 #spotify &
 #atom &
+#autorandr horizontal &
 
 # Boot picom or compton if it exists
 if [ -x "$(command -v picom)" ]; then

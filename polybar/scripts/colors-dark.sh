@@ -8,9 +8,9 @@ LFILE="$HOME/.config/leftwm/themes/current/theme.toml"
 # Change colors
 change_color() {
 	# leftwm
-	sed -i -e 's/focused_border_color = "#.*/focused_border_color = "'$SH5'"/g' $LFILE
-	sed -i -e 's/floating_border_color = "#.*/floating_border_color = "'$SH1'"/g' $LFILE
-	sed -i -e 's/default_border_color = "#.*/default_border_color = "'$SH1'"/g' $LFILE
+	sed -i -e 's/focused_border_color = "#.*/focused_border_color = "'$AC'"/g' $LFILE
+	#sed -i -e 's/floating_border_color = "#.*/floating_border_color = "#bbbbbb"/g' $LFILE
+	#sed -i -e 's/default_border_color = "#.*/default_border_color = "#bbbbbb"/g' $LFILE
 
 	# polybar
 	sed -i -e 's/background = #.*/background = #1F1F1F/g' $PFILE
@@ -36,6 +36,8 @@ change_color() {
 	EOF
 
 	polybar-msg cmd restart
+
+	leftwm-command SoftReload
 }
 
 if  [[ $1 = "--amber" ]]; then
