@@ -8,6 +8,13 @@ if [ -f "/tmp/leftwm-theme-down" ]; then
 fi
 ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
+keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
+
+# keybindings daemon
+if [ $keybLayout = "be" ]; then
+  cp ~/.config/leftwm/config-azerty.toml ~/.config/leftwm/config.toml
+fi
+
 # keybindings daemon
 sxhkd -c ~/.config/leftwm/sxhkd/sxhkdrc &
 

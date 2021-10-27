@@ -8,7 +8,7 @@ TFILE="$HOME/.config/leftwm/themes/current/template.liquid"
 
 # Change colors
 change_color() {
-	# leftwm
+	# leftwm theme.toml
 	sed -i -e 's/focused_border_color = "#.*/focused_border_color = "'$AC'"/g' $LFILE
 	#sed -i -e 's/floating_border_color = "#.*/floating_border_color = "#bbbbbb"/g' $LFILE
 	#sed -i -e 's/default_border_color = "#.*/default_border_color = "'$AC'"/g' $LFILE
