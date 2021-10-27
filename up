@@ -10,7 +10,7 @@ ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
 keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
-# keybindings daemon
+# keyboard bindings
 if [ $keybLayout = "be" ]; then
   cp ~/.config/leftwm/config-azerty.toml ~/.config/leftwm/config.toml
 fi

@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+## Author  : Aditya Shakya
+## Mail    : adi1090x@gmail.com
+## Github  : @adi1090x
+## Twitter : @adi1090x
+
 SDIR="$HOME/.config/leftwm/themes/current/polybar/scripts"
 
 # Launch Rofi
@@ -51,5 +56,5 @@ MENU="$(rofi -no-config -no-lazy-grab -sep "|" -dmenu -i -p '' \
 				*purple-dark) "$SDIR"/colors-dark.sh --purple ;;
 				*red-dark) "$SDIR"/colors-dark.sh --red ;;
 				*teal-dark) "$SDIR"/colors-dark.sh --teal ;;
-				*yellow-dark) "$SDIR"/colors-dark.sh --yellow				
+				*yellow-dark) "$SDIR"/colors-dark.sh --yellow
             esac
