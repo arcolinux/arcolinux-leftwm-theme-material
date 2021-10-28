@@ -1,1 +1,1 @@
-# Starwars: A leftwm configured theme
+# Material: A leftwm configured theme
