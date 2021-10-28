@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"Fantasque Sans Mono 10";
+	font:							"Fantasque Sans Mono 12";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -23,7 +23,6 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               @bg;
     text-color:                     @fg;
 	border:							0px;
 	border-color:					@ac;
@@ -66,7 +65,6 @@ inputbar {
 }
 
 listview {
-    background-color:               @al;
     padding:                        10px 10px 10px 10px;
     columns:                        2;
     lines:                          7;
@@ -77,7 +75,7 @@ listview {
 }
 
 mainbox {
-    background-color:               @al;
+    background-color:               @bg;
 	border:							0px;
     border-radius:                  0px;
 	border-color:					@ac;
@@ -87,7 +85,6 @@ mainbox {
 }
 
 element {
-    background-color:               @al;
     text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  0px;
@@ -107,9 +104,12 @@ element-text {
 }
 
 element selected {
-    background-color:               @bga;
     text-color:                     @fg;
 	border:							0px;
     border-radius:                  0px;
     border-color:                  	@bg;
+}
+
+element-text selected {
+    text-color:                     @ac;
 }

@@ -84,7 +84,6 @@ listview {
 }
 
 mainbox {
-    background-color:               @al;
 	border:							0px;
     border-radius:                  0px;
 	border-color:					@ac;
@@ -94,7 +93,6 @@ mainbox {
 }
 
 element {
-    background-color:               @al;
     text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  0px;
@@ -114,9 +112,12 @@ element-text {
 }
 
 element selected {
-    background-color:               @bga;
     text-color:                     @fg;
 	border:							0px;
     border-radius:                  0px;
     border-color:                  	@bg;
+}
+
+element-text selected {
+    text-color:                     @ac;
 }
